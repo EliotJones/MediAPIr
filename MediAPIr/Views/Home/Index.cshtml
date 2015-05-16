@@ -1,0 +1,52 @@
+﻿@model MediAPIr.Models.HomeModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>What is this?</h2>
+        <p>
+            This web application sends CQRS requests 'over the wire' to a web api, even though all Generic type information is lost in the process.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>All Rappers</h2>
+        <p>This list is populated using the <code>GetAllRappers</code> query.
+        </p>
+        <ul>
+            @for (int i = 0; i < Model.Rappers.Count; i++)
+            {
+                <li><b>Name</b>: @Model.Rappers[i].Name <br/> <b>Born</b>: @Model.Rappers[i].Born.ToString("dd MMMM yyyy")</li>
+            }
+        </ul>
+    </div>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <div class="form-control">
+                    @Html.LabelFor(m => m.SearchTerm, "Search by rapper name")
+                </div>
+                <div class="form-control">
+                    @Html.TextBoxFor(m => m.SearchTerm)
+                </div>
+            </div>
+            <button class="btn" type="submit">Search</button>
+        </div>
+    </div>
+}
+
+@if (Model.SearchResult != null)
+{
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Your search returned a result:</h2>
+            <p>The rapper <b>@Model.SearchResult.Name</b> (real name: @Model.SearchResult.RealName) was born on @Model.SearchResult.Born.ToString("dd MMMM yyyy").</p>
+        </div>
+    </div>
+}

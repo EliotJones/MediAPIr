@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediAPIr", "MediAPIr\MediAPIr.csproj", "{1B5A7A8A-8F72-4199-97B5-41CB5A7C892A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediAPIr.Api", "MediAPIr.Api\MediAPIr.Api.csproj", "{8E2F2CE4-9195-4793-A12C-7119E810DC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediAPIr.Cqrs", "MediAPIr.Cqrs\MediAPIr.Cqrs.csproj", "{E8899637-FD87-4373-8EDA-51220E39C994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaAPIr.Api.Client", "MediaAPIr.Api.Client\MediaAPIr.Api.Client.csproj", "{D68AE6EC-FCF2-4994-9C5F-CA3242C760AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5A7A8A-8F72-4199-97B5-41CB5A7C892A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5A7A8A-8F72-4199-97B5-41CB5A7C892A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5A7A8A-8F72-4199-97B5-41CB5A7C892A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5A7A8A-8F72-4199-97B5-41CB5A7C892A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2F2CE4-9195-4793-A12C-7119E810DC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2F2CE4-9195-4793-A12C-7119E810DC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2F2CE4-9195-4793-A12C-7119E810DC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2F2CE4-9195-4793-A12C-7119E810DC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8899637-FD87-4373-8EDA-51220E39C994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8899637-FD87-4373-8EDA-51220E39C994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8899637-FD87-4373-8EDA-51220E39C994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8899637-FD87-4373-8EDA-51220E39C994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68AE6EC-FCF2-4994-9C5F-CA3242C760AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68AE6EC-FCF2-4994-9C5F-CA3242C760AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68AE6EC-FCF2-4994-9C5F-CA3242C760AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68AE6EC-FCF2-4994-9C5F-CA3242C760AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
